@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>AAC WEB</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
-<script src="script.js"></script>
+    <title>AAC WEB</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(50, 168, 105);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .app-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .app-link {
+            display: inline-block;
+            margin-right: 20px;
+            text-decoration: none;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-link img {
+            height: 90px;
+            width: 90px;
+            transition: transform 0.3s ease;
+        }
+
+        .app-link img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
+
 <body>
-<div style="background-color: rgb(50, 168, 105);">
-<h1>Web para descargar las applicaciones de Alvaro Algarra Cerezo</h1>
-<p> ya añadire contenido</p>
+    <header>
+        <h1>Web para descargar las aplicaciones de Alvaro Algarra Cerezo</h1>
+        <p>Ya añadiré contenido</p>
+    </header>
 
-<a href="https://github.com/aalg02/FilmListApk/raw/main/FilmList.apk">
-    <img src="https://firebasestorage.googleapis.com/v0/b/filmlist-5d30c.appspot.com/o/FilmList.png?alt=media&token=04be5fba-064b-4fd1-9032-1e5d80d47648" alt="Descripción de la imagen" height ="90" width="90">
-  </a>
+    <div class="app-container">
+        <a class="app-link" href="https://github.com/aalg02/FilmListApk/raw/main/FilmList.apk">
+            <img src="https://firebasestorage.googleapis.com/v0/b/filmlist-5d30c.appspot.com/o/FilmList.png?alt=media&token=04be5fba-064b-4fd1-9032-1e5d80d47648" alt="FilmList App">
+        </a>
 
-<a href="">
-    <img src="https://firebasestorage.googleapis.com/v0/b/filmlist-5d30c.appspot.com/o/DVDiconoapp.png?alt=media&token=c30ffc4f-0536-455e-83d9-29f9f98aa6e3" alt="Descripción de la imagen" height ="90" width="90">
-  </a>
+        <a class="app-link" href="#">
+            <img src="https://firebasestorage.googleapis.com/v0/b/filmlist-5d30c.appspot.com/o/DVDiconoapp.png?alt=media&token=c30ffc4f-0536-455e-83d9-29f9f98aa6e3" alt="DVD App">
+        </a>
 
-<a href="">
-    <img src="https://firebasestorage.googleapis.com/v0/b/filmlist-5d30c.appspot.com/o/moscaiconoapp.png?alt=media&token=6a119afc-7040-4107-a9a2-184e5b7d3e02" alt="Descripción de la imagen" height ="90" width="90">
-  </a>
-  
-
+        <a class="app-link" href="#">
+            <img src="https://firebasestorage.googleapis.com/v0/b/filmlist-5d30c.appspot.com/o/moscaiconoapp.png?alt=media&token=6a119afc-7040-4107-a9a2-184e5b7d3e02" alt="Mosca App">
+        </a>
+    </div>
 </body>
+
 </html>
